@@ -1,0 +1,7 @@
+loomtrace.zip
+
+node_modules/
+.env
+.env.*
+qr/*.tmp
+.DS_Store

@@ -1,0 +1,1 @@
+{"name":"loomtrace-mvp-tools","private":true,"type":"module","scripts":{"qr":"node scripts/make-qr.mjs","smoke":"node scripts/smoke-test.mjs"},"dependencies":{"@supabase/supabase-js":"2.49.1","qrcode":"1.5.4"}}
