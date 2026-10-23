@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f3ef"><title>Evidence Review Desk — Loomtrace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#152c25;--muted:#74827a;--green:#184d38;--paper:#f2f3ef;--line:#e1e5dc;--white:#fff;--soft:#f7f8f4;--gold:#a36a26;--goldbg:#fff4df;--blue:#426a7c;--bluebg:#edf4f7;--red:#9b5148;--redbg:#fbefed;--ok:#477141;--okbg:#edf5e8}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:14px/1.55 'DM Sans',sans-serif}.wrap{width:min(1000px,calc(100% - 40px));margin:auto}.mono,.label{text-transform:uppercase;font-family:'DM Mono',monospace;letter-spacing:.09em}.top{height:70px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;gap:9px;align-items:center;text-decoration:none;color:var(--ink);font:800 18px Manrope,sans-serif}.brand i{width:29px;height:29px;border-radius:9px;background:var(--green);color:#dff28a;display:grid;place-items:center;font-style:normal}.back{color:#4b6655;text-decoration:none;font-size:11px;font-weight:700}.intro{padding:31px 0 21px}.eyebrow{font:9px 'DM Mono';letter-spacing:.1em;color:#7e8b82;text-transform:uppercase}.intro h1{font:700 34px Manrope;letter-spacing:-1.5px;margin:6px 0}.intro p{font-size:12px;color:#738078;margin:0;max-width:660px}.alert{padding:13px 15px;border:1px solid #e6d9ba;background:#fcf8ec;color:#6d5d40;border-radius:8px;font-size:10px;margin-bottom:16px}.alert b{color:#52452e}.cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}.panel{background:#fff;border:1px solid var(--line);border-radius:9px;padding:17px}.panel h2{font:700 15px Manrope;margin:0}.help{font-size:10px;color:#7c877f;margin:4px 0 14px}.upload{display:block;border:1px dashed #bfcabe;border-radius:8px;padding:15px;background:#fafbf8;cursor:pointer}.upload:hover{border-color:#67866d;background:#f4f8f1}.upload strong{display:block;font-size:11px}.upload small{display:block;color:#87928a;font-size:9px;margin-top:4px}.upload input{display:block;margin-top:10px;font-size:10px;max-width:100%}.file-status{font:9px 'DM Mono';color:#6b7b70;margin-top:8px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:13px}.field{display:flex;flex-direction:column;gap:4px}.field.full{grid-column:1/-1}.field label{font-size:9px;color:#68766d;font-weight:700}.field input,.field select,.field textarea{width:100%;border:1px solid #dce2da;border-radius:5px;padding:8px 9px;background:#fff;color:#233b2f;font:10px 'DM Sans',sans-serif}.field textarea{min-height:63px;resize:vertical}.field small{font-size:8px;color:#89928b}.checks{display:grid;gap:7px;margin:12px 0}.check{display:flex;align-items:flex-start;gap:8px;font-size:10px;color:#57665c}.check input{margin:2px 0 0;accent-color:var(--green)}.registry-links{display:flex;gap:6px;flex-wrap:wrap;margin:9px 0}.registry-links a{font-size:9px;text-decoration:none;color:#365f46;background:#eef3ea;padding:6px 8px;border-radius:4px}.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.btn{border:1px solid #d1d9d0;background:#fff;color:#345440;border-radius:6px;padding:9px 12px;font-size:10px;font-weight:700;cursor:pointer}.btn.primary{color:#fff;background:var(--green);border-color:var(--green)}.btn:hover{filter:brightness(.97)}.extract-box{margin-top:10px;padding:9px 10px;background:#f4f5f0;border-radius:5px;color:#6f7c73;font-size:9px}.result{margin:15px 0 0;border:1px solid var(--line);border-radius:8px;background:#fff;overflow:hidden}.result-head{display:flex;align-items:center;gap:10px;padding:13px 14px;background:#f6f8f3;border-bottom:1px solid var(--line)}.state-dot{width:9px;height:9px;border-radius:50%;background:#aaa}.result.good .state-dot{background:#71935e}.result.warn .state-dot{background:#d49a40}.result.bad .state-dot{background:#c1695c}.result-head strong{font:700 12px Manrope}.result-head span:last-child{margin-left:auto;font:8px 'DM Mono';letter-spacing:.05em;color:#79857c;text-transform:uppercase}.result-body{padding:13px 14px}.result-body p{font-size:10px;color:#65736a;margin:0 0 9px}.result-body ul{margin:0;padding-left:17px;color:#68756d;font-size:9px;display:grid;gap:4px}.result-foot{margin-top:11px;padding-top:10px;border-top:1px solid var(--line);font-size:9px;color:#8b754e}.status{display:inline-block;border-radius:4px;padding:5px 7px;font:8px 'DM Mono';text-transform:uppercase;letter-spacing:.04em}.s-blue{color:var(--blue);background:var(--bluebg)}.s-gold{color:var(--gold);background:var(--goldbg)}.s-green{color:var(--ok);background:var(--okbg)}.raw{display:none;margin-top:10px}.raw.show{display:block}.raw textarea{width:100%;height:140px;border:1px solid #dce2da;border-radius:6px;padding:9px;font:9px/1.4 'DM Mono';color:#47584d}.footer-note{margin:21px 0 32px;padding:13px 15px;border-left:3px solid #cba867;background:#fbf8ef;color:#776747;font-size:9px}.footer-note b{color:#5b4b2d}.footer{border-top:1px solid var(--line);padding:15px 0 23px;display:flex;justify-content:space-between;color:#89938b;font-size:9px}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,10px);opacity:0;pointer-events:none;background:#173c2c;color:#fff;padding:10px 13px;border-radius:6px;font-size:10px;transition:.2s}.toast.show{opacity:1;transform:translate(-50%,0)}
+    @media(max-width:720px){.wrap{width:calc(100% - 28px)}.cols{grid-template-columns:1fr}.intro h1{font-size:30px}.panel{padding:14px}}
+  </style>
+</head>
+<body><div class="wrap">
+  <header class="top"><a class="brand" href="index.html"><i>↗</i>loomtrace</a><a class="back" href="index.html">← Product passport</a></header>
+  <section class="intro"><div class="eyebrow">EVIDENCE REVIEW WORKSPACE</div><h1>Check the evidence, not just the label.</h1><p>Read a certificate, compare it with an issuer registry and product record, then capture the review trail. A scope certificate can support a facility claim; a transaction certificate is needed to support a specific shipment or product lot.</p></section>
+  <div class="alert"><b>AI assists the review; it cannot authenticate a certificate or certify a product.</b> PDF text is extracted in your browser. It is sent to the configured AI service only when you click “Analyze with AI.” Review every cited passage and verify the issuer’s registry yourself.</div>
+
+  <div class="cols">
+    <section class="panel"><h2>1 · Read a certificate</h2><p class="help">Upload a text-based PDF. Extraction runs locally in this browser; scanned image PDFs need OCR and must be reviewed manually.</p>
+      <label class="upload"><strong>Choose a certificate PDF</strong><small>Scope certificate, transaction certificate, or other evidence. The file is not sent to Loomtrace.</small><input id="pdf-file" type="file" accept="application/pdf"><div class="file-status" id="file-status">No file selected</div></label>
+      <div class="form-grid">
+        <div class="field"><label for="doc-type">Document type</label><select id="doc-type"><option value="scope">Scope certificate · facility</option><option value="transaction">Transaction certificate · shipment</option><option value="other">Other / unclear</option></select></div>
+        <div class="field"><label for="standard">Standard / credential</label><select id="standard"><option>GOTS</option><option>GRS</option><option>OCS</option><option>Fair Trade USA</option><option>bluesign®</option><option>Other</option></select></div>
+        <div class="field"><label for="cert-no">Certificate number</label><input id="cert-no" placeholder="From the original document"></div>
+        <div class="field"><label for="issuer">Issuer / certification body</label><input id="issuer" placeholder="Organization that issued it"></div>
+        <div class="field"><label for="holder">Certificate holder / supplier</label><input id="holder" placeholder="Legal entity named on certificate"></div>
+        <div class="field"><label for="scope">Certified scope / processes</label><input id="scope" placeholder="e.g. knitting, dyeing, garmenting"></div>
+        <div class="field"><label for="issue-date">Issue date</label><input id="issue-date" type="date"></div>
+        <div class="field"><label for="expiry-date">Expiry date</label><input id="expiry-date" type="date"></div>
+        <div class="field full"><label for="product-record">Product / shipment reference on document</label><input id="product-record" placeholder="SKU, product description, PO or shipment reference"></div>
+      </div>
+      <details class="raw" id="raw-details"><summary style="font-size:9px;color:#607268;cursor:pointer;margin:10px 0 6px">Review extracted text</summary><textarea id="raw-text" readonly aria-label="Extracted PDF text"></textarea></details>
+    </section>
+
+    <section class="panel"><h2>2 · Compare with the real record</h2><p class="help">Select the target product and confirm each match against the original document and issuing organization.</p>
+      <div class="form-grid" style="margin-top:0">
+        <div class="field"><label for="target-style">Target product / style</label><input id="target-style" value="Patagonia Style 38504"></div>
+        <div class="field"><label for="target-supplier">Expected supplier / factory</label><input id="target-supplier" value="Vertical Knits S.A. de C.V."></div>
+        <div class="field"><label for="shipment-date">Production / shipment date</label><input id="shipment-date" type="date"></div>
+        <div class="field"><label for="registry-result">Official registry result</label><select id="registry-result"><option value="unchecked">Not checked yet</option><option value="active">Active; holder and scope match</option><option value="inactive">Expired, suspended, or inactive</option><option value="nomatch">No matching entry / issuer conflict</option></select></div>
+      </div>
+      <div class="registry-links" aria-label="Official registries"><a href="https://global-standard.org/en/find-suppliers-shops-and-inputs/certifiedsuppliers" target="_blank" rel="noopener">GOTS supplier database ↗</a><a href="https://textileexchange.org/certificate-authentication/" target="_blank" rel="noopener">Textile Exchange authentication ↗</a><a href="https://partner.fairtradecertified.org/" target="_blank" rel="noopener">Fair Trade partner directory ↗</a><a href="https://www.bluesign.com/verify" target="_blank" rel="noopener">bluesign verification ↗</a></div>
+      <div class="checks">
+        <label class="check"><input type="checkbox" id="field-check">I compared extracted fields with the original certificate.</label>
+        <label class="check"><input type="checkbox" id="holder-check">The legal holder matches the supplier at this chain stage.</label>
+        <label class="check"><input type="checkbox" id="scope-check">The standard, facility, material and processes are within the certificate scope.</label>
+        <label class="check transaction-only"><input type="checkbox" id="product-check">The transaction document identifies the target product / shipment.</label>
+        <label class="check transaction-only"><input type="checkbox" id="chain-check">I have the required transaction evidence for each handoff in this material chain.</label>
+        <label class="check"><input type="checkbox" id="issuer-check">I checked the issuer’s registry / authentication tool and recorded the result above.</label>
+      </div>
+      <div class="field full"><label for="review-note">Reviewer note (what was checked / still missing)</label><textarea id="review-note" placeholder="Record the source URL or registry result reference, scope boundaries, and any discrepancy."></textarea></div>
+      <div class="actions" style="margin-top:12px"><button class="btn primary" id="run-ai">Analyze with AI</button><button class="btn" id="run-check">Evaluate evidence gates</button><button class="btn" id="copy-report">Copy review record</button><button class="btn" id="clear-form">Clear</button></div>
+      <div class="help" id="ai-status" aria-live="polite">AI analysis checks the supplied document for supported fields, scope/date mismatches and gaps. It cannot check a live issuer registry.</div>
+      <div class="result" id="ai-result" aria-live="polite" hidden></div>
+      <div class="result" id="result" aria-live="polite"><div class="result-head"><span class="state-dot"></span><strong>Waiting for evidence</strong><span>no decision</span></div><div class="result-body"><p>Upload a certificate, confirm its fields, then evaluate the evidence gates.</p></div></div>
+    </section>
+  </div>
+  <div class="footer-note"><b>How to read the AI result:</b> it checks the text you provide for plausible evidence and conflicts, with page references and short quotations. It does not prove that a document is genuine, that the registry is current, or that the product is certified. A human must verify those facts.</div>
+  <footer class="footer"><span>Review evidence for <b>Patagonia Style 38504</b></span><span>PDF parsed locally · AI request is opt-in</span></footer>
+</div><div class="toast" id="toast" role="status" aria-live="polite">Review record copied</div>
+<script type="module">
+  const byId=id=>document.getElementById(id);
+  const type=byId('doc-type');
+  type.addEventListener('change',()=>document.querySelectorAll('.transaction-only').forEach(el=>el.style.display=type.value==='transaction'?'flex':'none'));
+  const file=byId('pdf-file');
+  let extracted='';
+  const suggest=(id,regex)=>{const m=extracted.match(regex);if(m&&m[1]&&!byId(id).value)byId(id).value=m[1].trim().replace(/[\s.;,]+$/,'');};
+  file.addEventListener('change',async()=>{
+    const selected=file.files?.[0];if(!selected)return;
+    if(selected.type!=='application/pdf'){byId('file-status').textContent='Choose a PDF file.';return;}
+    byId('file-status').textContent=`Reading ${selected.name} locally…`;
+    try{
+      const pdfjs=await import('https://cdn.jsdelivr.net/npm/pdfjs-dist@6.4.299/build/pdf.mjs');
+      pdfjs.GlobalWorkerOptions.workerSrc='https://cdn.jsdelivr.net/npm/pdfjs-dist@6.4.299/build/pdf.worker.mjs';
+      const doc=await pdfjs.getDocument({data:new Uint8Array(await selected.arrayBuffer())}).promise;
+      const pages=[];
+      for(let n=1;n<=doc.numPages;n++){const page=await doc.getPage(n);const content=await page.getTextContent();pages.push(`[PAGE ${n}]\n${content.items.map(item=>item.str).join(' ')}`);}
+      extracted=pages.join('\n');byId('raw-text').value=extracted;byId('raw-details').classList.add('show');
+      byId('file-status').textContent=`${selected.name} · ${doc.numPages} page(s) · extracted in this browser`;
+      suggest('cert-no',/(?:certificate|cert\.?|license|licence)\s*(?:no\.?|number|#|id)?\s*[:#-]?\s*([A-Z0-9][A-Z0-9\/-]{3,})/i);
+      suggest('holder',/(?:certificate holder|certified entity|company name|organization)\s*[:\-]\s*([^\n]{3,100})/i);
+      suggest('issuer',/(?:certification body|certified by|issued by)\s*[:\-]\s*([^\n]{3,100})/i);
+      suggest('scope',/(?:scope of certification|scope|certified activities|product categories)\s*[:\-]\s*([^\n]{3,150})/i);
+      suggest('product-record',/(?:product|shipment|goods description|transaction)\s*(?:reference|description|details)?\s*[:\-]\s*([^\n]{3,150})/i);
+      extractDate('issue-date',/(?:issue date|date of issue|valid from|first issue date)\s*[:\-]?\s*([0-9]{1,2}[./-][0-9]{1,2}[./-][0-9]{2,4}|[0-9]{4}-[0-9]{2}-[0-9]{2})/i);
+      extractDate('expiry-date',/(?:expiry date|expiration date|valid until|valid to)\s*[:\-]?\s*([0-9]{1,2}[./-][0-9]{1,2}[./-][0-9]{2,4}|[0-9]{4}-[0-9]{2}-[0-9]{2})/i);
+    }catch(error){byId('file-status').textContent='Could not read this PDF here. Fill the fields manually; no file was uploaded.';}
+  });
+  const aiResult=byId('ai-result');
+  byId('run-ai').addEventListener('click',async()=>{
+    if(!extracted.replace(/\[PAGE \d+\]/g,'').trim()){aiResult.hidden=false;renderAiError('No readable text was found. This may be a scanned PDF; use OCR or review the original manually.');return;}
+    if(extracted.length>30000){aiResult.hidden=false;renderAiError('This certificate is too long for this review (over 30,000 characters). Use a shorter relevant document.');return;}
+    const fields=['doc-type','standard','cert-no','issuer','holder','scope','issue-date','expiry-date','product-record','target-style','target-supplier','shipment-date','registry-result'];
+    const record=Object.fromEntries(fields.map(id=>[id,byId(id).value]));
+    const status=byId('ai-status');status.textContent='Sending certificate text and review fields to the configured AI service…';
+    byId('run-ai').disabled=true;aiResult.hidden=true;
+    try{
+      const response=await fetch('/api/review',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({certificateText:extracted,record})});
+      const payload=await response.json().catch(()=>({}));
+      if(!response.ok)throw new Error(response.status===404?'The AI endpoint is not available on this host. Deploy the project to Vercel and configure its server secret.':payload.error||`AI review endpoint returned ${response.status}.`);
+      renderAi(payload);status.textContent='AI review complete. Verify every finding against the original and issuer registry.';
+    }catch(error){renderAiError(error.message==='Failed to fetch'?'AI review is unavailable here. Deploy this project with its server endpoint configured, then reopen this page.':error.message);status.textContent='AI review did not complete.';}
+    finally{byId('run-ai').disabled=false;}
+  });
+  function escapeHtml(value){return String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));}
+  function renderAiError(message){aiResult.hidden=false;aiResult.className='result warn';aiResult.innerHTML=`<div class="result-head"><span class="state-dot"></span><strong>AI review unavailable</strong><span>no assessment</span></div><div class="result-body"><p>${escapeHtml(message)}</p></div>`;}
+  function renderAi(data){
+    const findings=Array.isArray(data.findings)?data.findings:[];
+    const klass=data.review_status==='high_risk_flag'?'bad':data.review_status==='no_obvious_issue'?'good':'warn';
+    const title=data.review_status==='high_risk_flag'?'Potential conflict found':data.review_status==='no_obvious_issue'?'No obvious text conflict found':'Human review required';
+    const rows=findings.length?findings.map(f=>`<li><b>${escapeHtml(f.severity)} · ${escapeHtml(f.field)}:</b> ${escapeHtml(f.issue)}${f.evidence_quote?`<blockquote>“${escapeHtml(f.evidence_quote)}”${f.page?` <span>— page ${escapeHtml(f.page)}</span>`:''}</blockquote>`:''}${f.recommendation?`<div>${escapeHtml(f.recommendation)}</div>`:''}</li>`).join(''):'<li>No specific text findings. This does not establish authenticity or certification.</li>';
+    aiResult.hidden=false;aiResult.className=`result ${klass}`;aiResult.innerHTML=`<div class="result-head"><span class="state-dot"></span><strong>${title}</strong><span>AI triage · not a verdict</span></div><div class="result-body"><p>${escapeHtml(data.summary||'Review the cited evidence and validate it independently.')}</p><ul>${rows}</ul><div class="result-foot">${escapeHtml(data.limits||'Text analysis only. Verify the original certificate, issuer registry, scope, chain of custody and product-level transaction records with a human reviewer.')}</div></div>`;
+  }
+  function extractDate(id,regex){const m=extracted.match(regex);if(!m)return;const raw=m[1];let d;if(/^\d{4}-/.test(raw))d=raw;else{const p=raw.split(/[./-]/);let y=Number(p[2]);if(y<100)y+=y<50?2000:1900;d=`${y}-${String(p[1]).padStart(2,'0')}-${String(p[0]).padStart(2,'0')}`;}if(!byId(id).value)byId(id).value=d;}
+  const result=byId('result');
+  byId('run-check').addEventListener('click',()=>{
+    const missing=[];const registry=byId('registry-result').value;const expiry=byId('expiry-date').value;const issue=byId('issue-date').value;const ship=byId('shipment-date').value;const docType=type.value;
+    if(!byId('cert-no').value.trim())missing.push('Certificate number not recorded.');
+    if(!byId('holder').value.trim())missing.push('Certificate holder not recorded.');
+    if(!byId('scope').value.trim())missing.push('Certified scope not recorded.');
+    if(!byId('field-check').checked)missing.push('Extracted fields have not been confirmed against the original.');
+    if(!byId('holder-check').checked)missing.push('Holder-to-supplier match has not been confirmed.');
+    if(!byId('scope-check').checked)missing.push('Scope-to-process/material match has not been confirmed.');
+    if(!byId('issuer-check').checked||registry==='unchecked')missing.push('Issuing body registry/authentication has not been confirmed.');
+    if(registry==='inactive')missing.push('Registry result is inactive or expired.');
+    if(registry==='nomatch')missing.push('Registry returned no match or a conflict.');
+    if(!issue||!expiry)missing.push('Certificate validity dates are incomplete.');
+    else{const today=new Date();today.setHours(0,0,0,0);if(new Date(`${expiry}T00:00:00`)<today)missing.push('Certificate expiry date has passed.');if(new Date(`${issue}T00:00:00`)>today)missing.push('Certificate issue date is in the future.');if(ship&&(new Date(`${issue}T00:00:00`)>new Date(`${ship}T00:00:00`)||new Date(`${expiry}T00:00:00`)<new Date(`${ship}T00:00:00`)))missing.push('Certificate dates do not cover the production/shipment date entered.');}
+    let title,subtitle,klass='warn',body='';
+    if(docType==='scope'){
+      if(missing.length===0&&registry==='active'){title='Facility scope review recorded';subtitle='NOT PRODUCT / SHIPMENT VERIFICATION';klass='good';body='The reviewer has recorded an active registry match, matching holder, matching scope, and dates that cover the entered activity. This supports only a facility/process-scope claim.';}
+      else{title='Facility credential not cleared';subtitle='REVIEW INCOMPLETE';body='This scope certificate cannot yet support a facility claim in this record.';}
+      missing.push('A Scope Certificate does not prove that this specific product or shipment is certified.');
+    }else if(docType==='transaction'){
+      if(!byId('product-check').checked)missing.push('Transaction document has not been matched to the target product/shipment.');
+      if(!byId('chain-check').checked)missing.push('Transaction certificates for every required handoff have not been confirmed.');
+      const ready=missing.length===0&&registry==='active';
+      title=ready?'Shipment evidence candidate assembled':'Shipment evidence not cleared';subtitle=ready?'HUMAN REVIEW REQUIRED':'REVIEW INCOMPLETE';klass=ready?'good':'warn';
+      body=ready?'The reviewer recorded matching product, supplier, scope, active registry and date evidence. This is a candidate match only; an authorized reviewer must confirm the original transaction record with its issuer before calling the shipment certified.':'A transaction certificate must identify the applicable product/shipment and connect to valid suppliers and dates. Gaps remain before this record can be assessed.';
+    }else{title='Document type unclear';subtitle='CANNOT ASSESS';body='Identify whether this is a facility Scope Certificate or a product/shipment Transaction Certificate before evaluating it.';}
+    if(registry==='inactive'||registry==='nomatch'){klass='bad';title='Credential conflict';subtitle='DO NOT ACCEPT WITHOUT RESOLUTION';}
+    result.className=`result ${klass}`;
+    result.innerHTML=`<div class="result-head"><span class="state-dot"></span><strong>${title}</strong><span>${subtitle}</span></div><div class="result-body"><p>${body}</p><ul>${[...new Set(missing)].map(x=>`<li>${x}</li>`).join('')||'<li>No deterministic check gaps found.</li>'}</ul><div class="result-foot">Rule-based triage only · not AI · not a certification decision. Record the official registry result and human reviewer’s source URL before relying on this assessment.</div></div>`;
+  });
+  byId('copy-report').addEventListener('click',async()=>{const fields=['doc-type','standard','cert-no','issuer','holder','scope','issue-date','expiry-date','product-record','target-style','target-supplier','shipment-date','registry-result','review-note'];const text=['LOOMTRACE EVIDENCE REVIEW — HUMAN REVIEW REQUIRED',...fields.map(id=>`${id}: ${byId(id).value||'(blank)'}`),`field-check: ${byId('field-check').checked}`,`holder-check: ${byId('holder-check').checked}`,`scope-check: ${byId('scope-check').checked}`,`product-check: ${byId('product-check').checked}`,`chain-check: ${byId('chain-check').checked}`,`issuer-check: ${byId('issuer-check').checked}`].join('\n');try{await navigator.clipboard.writeText(text);toastMsg('Review record copied');}catch(e){toastMsg('Clipboard unavailable; select and copy manually.');}});
+  byId('clear-form').addEventListener('click',()=>{document.querySelectorAll('input:not([type=file]),textarea,select').forEach(el=>{if(el.id==='target-style')el.value='Patagonia Style 38504';else if(el.id==='target-supplier')el.value='Vertical Knits S.A. de C.V.';else if(el.type==='checkbox')el.checked=false;else if(el.tagName==='SELECT')el.selectedIndex=0;else el.value='';});file.value='';extracted='';byId('raw-text').value='';byId('raw-details').classList.remove('show');byId('file-status').textContent='No file selected';result.className='result';result.innerHTML='<div class="result-head"><span class="state-dot"></span><strong>Waiting for evidence</strong><span>no decision</span></div><div class="result-body"><p>Upload a certificate, confirm its fields, then evaluate the evidence gates.</p></div>';aiResult.hidden=true;byId('ai-status').textContent='AI analysis checks the supplied document for supported fields, scope/date mismatches and gaps. It cannot check a live issuer registry.';document.querySelectorAll('.transaction-only').forEach(el=>el.style.display=type.value==='transaction'?'flex':'none');});
+  let toastTimer;function toastMsg(text){const t=byId('toast');t.textContent=text;t.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),2300);}
+</script>
+</body></html>

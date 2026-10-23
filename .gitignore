@@ -1,7 +1,6 @@
 loomtrace.zip
-
-node_modules/
+*.zip
+outputs/
 .env
 .env.*
-qr/*.tmp
-.DS_Store
+!.env.example
